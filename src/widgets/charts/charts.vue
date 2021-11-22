@@ -12,13 +12,13 @@
           ><span class="title_content">{{ mainTitle }}</span>
         </div>
         <span class="icon-bg11"
-        ><img src="../../assets/iconfont/时间.png" alt="" class="bg-img"
+          ><img src="../../assets/iconfont/时间.png" alt="" class="bg-img"
         /></span>
         <span class="icon-bg22"
-        ><img src="../../assets/iconfont/人.png" alt="" class="bg-img1"
+          ><img src="../../assets/iconfont/人.png" alt="" class="bg-img1"
         /></span>
         <span class="icon-bg44"
-        ><img src="../../assets/iconfont/人2.png" alt="" class="bg-img3"
+          ><img src="../../assets/iconfont/人2.png" alt="" class="bg-img3"
         /></span>
         <div class="font-box2">
           <div>当前时间: {{ currentTime }}</div>
@@ -33,6 +33,7 @@
           <div class="box_font_div2">当前人数</div>
           <div class="box_font_div3">安保人数</div>
           <div class="box_font_div4">预计人数</div>
+          <div class="box_font_div4">预计人数</div>
         </div>
 
         <div class="box">
@@ -44,8 +45,12 @@
             <div class="box_content_font">
               <span class="box_content_span1">{{ item.title }}</span>
               <span>{{ item.info[4].persons.length }}</span>
-              <span class="box_content_span3">{{ item.info[0].persons.length }}</span>
-              <span>{{ parseInt(item.info[4].persons.length * (1 + 1 * Math.random())) }}</span>
+              <span class="box_content_span3">{{
+                item.info[0].persons.length
+              }}</span>
+              <span>{{
+                parseInt(item.info[4].persons.length * (1 + 1 * Math.random()))
+              }}</span>
             </div>
           </div>
         </div>
@@ -59,16 +64,16 @@
     <div id="Chart1" key="1" class="loading1" v-show="isShowPeopleFlow">
       <div class="table_content">
         <span class="icon-bg1">
-          <img src="../../assets/iconfont/时间.png" alt="" class="bg-img"/>
+          <img src="../../assets/iconfont/时间.png" alt="" class="bg-img" />
         </span>
         <span class="icon-bg2">
-          <img src="../../assets/iconfont/人.png" alt="" class="bg-img1"/>
+          <img src="../../assets/iconfont/人.png" alt="" class="bg-img1" />
         </span>
         <span class="icon-bg3">
-          <img src="../../assets/iconfont/警察.png" alt="" class="bg-img2"/>
+          <img src="../../assets/iconfont/警察.png" alt="" class="bg-img2" />
         </span>
         <span class="icon-bg4">
-          <img src="../../assets/iconfont/人2.png" alt="" class="bg-img3"/>
+          <img src="../../assets/iconfont/人2.png" alt="" class="bg-img3" />
         </span>
         <div class="font-box1">
           <div>当前时间: {{ currentTime }}</div>
@@ -78,10 +83,20 @@
         </div>
       </div>
       <div ref="myChart" class="line_content"></div>
-      <div class="displayModel" :class="{hideDisplay: !isModel }" :title="ModelTitle" @click="handelModel">
+      <div
+        class="displayModel"
+        :class="{ hideDisplay: !isModel }"
+        :title="ModelTitle"
+        @click="handelModel"
+      >
         人模型
       </div>
-      <div class="displayHeatMap" :class="{hideDisplay: !isHeatMap }" :title="HeatMapTitle" @click="handelHeatMap">
+      <div
+        class="displayHeatMap"
+        :class="{ hideDisplay: !isHeatMap }"
+        :title="HeatMapTitle"
+        @click="handelHeatMap"
+      >
         热力图
       </div>
     </div>
@@ -146,7 +161,9 @@ export default {
       _this.chartTitle = charts;
     });
     this.on("currentCameraTopFive", currentCameraTopFive => {
-      _this.currentCameraTopFive = JSON.parse(JSON.stringify(currentCameraTopFive));
+      _this.currentCameraTopFive = JSON.parse(
+        JSON.stringify(currentCameraTopFive)
+      );
       peopleFlow.getHeatMapData(currentCameraTopFive);
       _this.peoplesList.length = 0;
       _this.xAxisData.length = 0;
@@ -155,15 +172,19 @@ export default {
         _this.peoplesList.push(_this.currentCameraTopFive.info[i].peopleNum);
         _this.xAxisData.push(
           _this.currentCameraTopFive.info[i].time.substr(8, 2) +
-          ":" +
-          _this.currentCameraTopFive.info[i].time.substr(10, 2)
+            ":" +
+            _this.currentCameraTopFive.info[i].time.substr(10, 2)
         );
       }
       _this.currentTime = _this.xAxisData[_this.xAxisData.length - 1];
       _this.currentPersonNum = _this.peoplesList[_this.peoplesList.length - 1];
       _this.xAxisData.push("预测");
 
-      _this.predictPersonNum = _this.peoplesList[_this.peoplesList.length - 1] + parseInt(Math.random() * _this.peoplesList[_this.peoplesList.length - 1]);
+      _this.predictPersonNum =
+        _this.peoplesList[_this.peoplesList.length - 1] +
+        parseInt(
+          Math.random() * _this.peoplesList[_this.peoplesList.length - 1]
+        );
       _this.peoplesList.push(_this.predictPersonNum);
       let peoplesList1 = [];
       for (let i = 0; i < _this.peoplesList.length - 2; i++) {
@@ -176,7 +197,9 @@ export default {
       let PopulationMax = _this.peoplesList[0];
       for (let i = 0; i < _this.peoplesList.length - 1; i++) {
         PopulationMax =
-          PopulationMax < _this.peoplesList[i + 1] ? _this.peoplesList[i + 1] : PopulationMax;
+          PopulationMax < _this.peoplesList[i + 1]
+            ? _this.peoplesList[i + 1]
+            : PopulationMax;
       }
 
       function renderCharts() {
@@ -302,25 +325,35 @@ export default {
       }
 
       this.timer = setInterval(renderCharts(), 5000 / 5);
-      _this.myChart.on("click", function (params) {
+      _this.myChart.on("click", function(params) {
         peopleFlow.removeHeatMap();
         _this.isHeatMap = false;
         _this.isModel = true;
         _this.moment = params.dataIndex;
         let imgSrc = "";
         if (_this.moment == "4") {
-          imgSrc = "data:image/jpeg;base64," + _this.currentCameraTopFive.info[_this.moment].imageOutput;
+          imgSrc =
+            "data:image/jpeg;base64," +
+            _this.currentCameraTopFive.info[_this.moment].imageOutput;
         } else if (_this.moment == "5") {
-          imgSrc = "http://192.168.2.155:8080/data/none.jpg"
+          imgSrc = "http://192.168.2.155:8080/data/none.jpg";
         } else if (currentCameraTopFive.info[_this.moment].peopleNum > 0) {
-          imgSrc = _this.historyImgUrl + _this.currentCameraTopFive.info[_this.moment].image;
+          imgSrc =
+            _this.historyImgUrl +
+            _this.currentCameraTopFive.info[_this.moment].image;
         } else {
-          imgSrc = _this.historyImgUrlUp + _this.currentCameraTopFive.info[_this.moment].image;
+          imgSrc =
+            _this.historyImgUrlUp +
+            _this.currentCameraTopFive.info[_this.moment].image;
         }
         if (_this.moment < 5) {
-          peopleFlow.addPeoplesByMoment(window.viewer, _this.moment, currentCameraTopFive)
+          peopleFlow.addPeoplesByMoment(
+            window.viewer,
+            _this.moment,
+            currentCameraTopFive
+          );
         } else {
-          peopleFlow.removeManModel()
+          peopleFlow.removeManModel();
         }
         _this.emit("imgsrc", imgSrc);
         _this.emit("imgsrcChange", imgSrc);
@@ -338,22 +371,28 @@ export default {
         _this.xAxisData = [];
         _this.currentPersonNum = 0;
         _this.recParams = val;
-        _this.currentTime = this.recParams[0].info[this.recParams[0].info.length - 1].time.slice(8, 10) + ":00";
+        _this.currentTime =
+          this.recParams[0].info[this.recParams[0].info.length - 1].time.slice(
+            8,
+            10
+          ) + ":00";
         _this.recParams[0].info.forEach(item => {
           _this.xAxisData.push(item.time.slice(8, 10) + ":00");
         });
-        _this.mainTitle = this.recParams[0].parTitle
+        _this.mainTitle = this.recParams[0].parTitle;
         _this.xAxisData.push("预测");
         var sumPeoNum = [0, 0, 0, 0, 0];
         _this.recParams.forEach(element => {
           _this.currentPersonNum += element.info[4].persons.length;
-          _this.predictPersonNum += parseInt(element.info[4].persons.length * (1 + 1 * Math.random()));
+          _this.predictPersonNum += parseInt(
+            element.info[4].persons.length * (1 + 1 * Math.random())
+          );
           _this.peoplesList1.push("-");
           sumPeoNum[0] += element.info[0].persons.length;
-          sumPeoNum[1] += element.info[1].persons.length
-          sumPeoNum[2] += element.info[2].persons.length
-          sumPeoNum[3] += element.info[3].persons.length
-          sumPeoNum[4] += element.info[4].persons.length
+          sumPeoNum[1] += element.info[1].persons.length;
+          sumPeoNum[2] += element.info[2].persons.length;
+          sumPeoNum[3] += element.info[3].persons.length;
+          sumPeoNum[4] += element.info[4].persons.length;
         });
         _this.peoplesList = sumPeoNum;
         _this.peoplesList1[4] = this.peoplesList[4];
@@ -361,9 +400,15 @@ export default {
         _this.peoplesList1.push(this.predictPersonNum);
         let PopulationMax = _this.peoplesList[0];
         for (let i = 0; i < _this.peoplesList.length - 1; i++) {
-          PopulationMax = PopulationMax < _this.peoplesList[i + 1] ? _this.peoplesList[i + 1] : PopulationMax;
+          PopulationMax =
+            PopulationMax < _this.peoplesList[i + 1]
+              ? _this.peoplesList[i + 1]
+              : PopulationMax;
         }
-        PopulationMax = PopulationMax > _this.predictPersonNum ? PopulationMax : _this.predictPersonNum;
+        PopulationMax =
+          PopulationMax > _this.predictPersonNum
+            ? PopulationMax
+            : _this.predictPersonNum;
         var initChart = document.getElementById("myChart3");
         _this.myChart2 = echarts.init(initChart);
 
@@ -482,7 +527,6 @@ export default {
 
         setTimeout(renderCharts(), 100);
       }
-
     });
   },
   methods: {
@@ -492,13 +536,17 @@ export default {
       this.peoplesList = [];
       this.myChart2.clear();
       this.emit("closeStatic");
-      peopleFlow.removeHeatMap()
+      peopleFlow.removeHeatMap();
       this.$message.success("关闭统计", 1);
     },
     handelModel() {
       this.isModel = !this.isModel;
       if (this.isModel && this.moment < 5) {
-        peopleFlow.addPeoplesByMoment(window.viewer, this.moment, this.currentCameraTopFive);
+        peopleFlow.addPeoplesByMoment(
+          window.viewer,
+          this.moment,
+          this.currentCameraTopFive
+        );
         this.ModelTitle = "关闭人模型";
       } else {
         // peopleFlow.removePeoples();
@@ -510,10 +558,16 @@ export default {
       this.isHeatMap = !this.isHeatMap;
       if (this.isHeatMap) {
         this.HeatMapTitle = "关闭热力图";
-        console.log(window.heatMapMaxValues[this.moment])
-        console.log(window.heatMapDatas[this.moment])
-        console.log(window.heatMapBounds[this.moment])
-        peopleFlow.createHeatMap("RLFY", 0, window.heatMapMaxValues[this.moment], window.heatMapDatas[this.moment], window.heatMapBounds[this.moment]);
+        console.log(window.heatMapMaxValues[this.moment]);
+        console.log(window.heatMapDatas[this.moment]);
+        console.log(window.heatMapBounds[this.moment]);
+        peopleFlow.createHeatMap(
+          "RLFY",
+          0,
+          window.heatMapMaxValues[this.moment],
+          window.heatMapDatas[this.moment],
+          window.heatMapBounds[this.moment]
+        );
       } else {
         this.HeatMapTitle = "打开热力图";
         peopleFlow.removeHeatMap();
