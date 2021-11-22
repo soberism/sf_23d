@@ -1,0 +1,554 @@
+{
+  "layerList": [
+    {
+      "id": "01",
+      "title": "南京市",
+      "key": "0-0",
+      "scopedSlots": {"title": "custom3"},
+      "des":"ance",
+      "checkable":false,
+      "children": [
+        {
+          "id": "0101",
+          "title": "玄武分局",
+          "key": "0-0-0",
+          "scopedSlots": {"title": "custom1"},
+          "des":"ance",
+          "checkable":false,
+          "children": []
+        },
+        {
+          "id": "0102",
+          "title": "秦淮分局",
+          "key": "0-0-1",
+          "scopedSlots": {"title": "custom1"},
+          "des":"ance",
+          "checkable":false,
+          "children": []
+        },
+        {
+          "id": "0103",
+          "title": "鼓楼分局",
+          "key": "0-0-2",
+          "scopedSlots": {"title": "custom1"},
+          "des":"ance",
+          "checkable":false,
+          "children": [
+            {
+              "id": "010301",
+              "title": "华侨路派出所",
+              "key": "0-0-2-1",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010302",
+              "title": "宁海路派出所",
+              "key": "0-0-2-2",
+              "checkable":"false",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010303",
+              "title": "鼓楼派出所",
+              "key": "0-0-2-3",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010304",
+              "title": "中央门派出所",
+              "key": "0-0-2-4",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010305",
+              "title": "挹江门派出所",
+              "key": "0-0-2-5",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010306",
+              "title": "江东派出所",
+              "key": "0-0-2-6",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": [
+                {
+                  "id": "01030601",
+                  "title": "宝船责任区",
+                  "key": "0-0-2-6-1",
+                  "scopedSlots": {"title": "custom1"},
+                  "des":"ance",
+                  "checkable":false,
+                  "children": []
+                },
+                {
+                  "id": "01030602",
+                  "title": "江滨新寓责任区",
+                  "key": "0-0-2-6-2",
+                  "scopedSlots": {"title": "custom1"},
+                  "des":"ance",
+                  "checkable":false,
+                  "children": []
+                },
+                {
+                  "id": "01030603",
+                  "title": "银城花园责任区",
+                  "key": "0-0-2-6-3",
+                  "scopedSlots": {"title": "custom1"},
+                  "des":"ance",
+                  "checkable":false,
+                  "children": []
+                },
+                {
+                  "id": "01030604",
+                  "title": "聚福园责任区",
+                  "key": "0-0-2-6-4",
+                  "scopedSlots": {"title": "custom1"},
+                  "des":"ance",
+                  "checkable":false,
+                  "children": []
+                },
+                {
+                  "id": "01030605",
+                  "title": "长阳花园责任区",
+                  "key": "0-0-2-6-5",
+                  "scopedSlots": {"title": "custom1"},
+                  "des":"ance",
+                  "checkable":false,
+                  "children": []
+                },
+                {
+                  "id": "01030606",
+                  "title": "清河新寓责任区",
+                  "key": "0-0-2-6-6",
+                  "scopedSlots": {"title": "custom1"},
+                  "des":"ance",
+                  "checkable":false,
+                  "children": []
+                },
+                {
+                  "id": "01030607",
+                  "title": "睿城责任区",
+                  "key": "0-0-2-6-7",
+                  "scopedSlots": {"title": "custom1"},
+                  "des":"ance",
+                  "checkable":false,
+                  "children": [
+                    {
+                      "id": "0103060701",
+                      "title": "江东软件城",
+                      "key": "0-0-2-6-6-1",
+                      "scopedSlots": {"title": "custom1"},
+                      "des":"ance",
+                      "checkable":false,
+                      "children": [
+                        {
+                          "id": "0103070101",
+                          "title": "苏宁慧谷",
+                          "key": "0-0-2-6-6-1-1",
+                          "scopedSlots": {"title": "custom1"},
+                          "des":"ance",
+                          "checkable":false,
+                          "children": []
+                        },
+                        {
+                          "id": "0103070102",
+                          "title": "南京国际服务外包大厦",
+                          "key": "0-0-2-6-6-1-2",
+                          "scopedSlots": {"title": "custom1"},
+                          "des":"ance",
+                          "checkable":false,
+                          "children": []
+                        },
+                        {
+                          "id": "0103070103",
+                          "title": "南大苏富特科技创新园",
+                          "key": "0-0-2-6-6-1-3",
+                          "scopedSlots": {"title": "custom1"},
+                          "des":"ance",
+                          "checkable":false,
+                          "children": []
+                        },
+                        {
+                          "id": "0103070104",
+                          "title": "紫金科技创业特别社区",
+                          "key": "0-0-2-6-6-1-4",
+                          "scopedSlots": {"title": "custom1"},
+                          "des":"ance",
+                          "checkable":false,
+                          "children": []
+                        },
+                        {
+                          "id": "0103070105",
+                          "title": "联创软件大厦",
+                          "key": "0-0-2-6-6-1-5",
+                          "scopedSlots": {"title": "custom1"},
+                          "des":"father-LC",
+                          "children": [
+                            {
+                              "id": "010307010501",
+                              "title": "01-联创入口",
+                              "key": "0-0-2-6-6-1-5-1",
+                              "scopedSlots": {"title": "custom2"},
+                              "des":"child"
+                            },
+                            {
+                              "id": "010307010502",
+                              "title": "02-停车场",
+                              "key": "0-0-2-6-6-1-5-2",
+                              "scopedSlots": {"title": "custom2"},
+                              "des":"child"
+                            },
+                            {
+                              "id": "010307010503",
+                              "title": "03-停车场（负一层入口）",
+                              "key": "0-0-2-6-6-1-5-3",
+                              "scopedSlots": {"title": "custom2"},
+                              "des":"child"
+                            },
+                            {
+                              "id": "010307010504",
+                              "title": "04-联创大厦-入户大厅",
+                              "key": "0-0-2-6-6-1-5-4",
+                              "scopedSlots": {"title": "custom2"},
+                              "des":"child"
+                            },
+                            {
+                              "id": "010307010505",
+                              "title": "05-广场",
+                              "key": "0-0-2-6-6-1-5-5",
+                              "scopedSlots": {"title": "custom2"},
+                              "des":"child"
+                            },
+                            {
+                              "id": "010307010506",
+                              "title": "06-室内办公区",
+                              "key": "0-0-2-6-6-1-5-6",
+                              "scopedSlots": {"title": "custom2"},
+                              "des":"child"
+                            },
+                            {
+                              "id": "010307010507",
+                              "title": "07-联创A栋12楼位置",
+                              "key": "0-0-2-6-6-1-5-7",
+                              "scopedSlots": {"title": "custom2"},
+                              "des":"child"
+                            },
+                            {
+                              "id": "010307010508",
+                              "title": "08-智慧地理研究室办公区",
+                              "key": "0-0-2-6-6-1-5-8",
+                              "scopedSlots": {"title": "custom2"},
+                              "des":"child",
+                              "cameraID":"camera3"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "0103070106",
+                          "title": "江苏绿色建筑大厦",
+                          "key": "0-0-2-6-6-1-6",
+                          "scopedSlots": {"title": "custom1"},
+                          "des":"ance",
+                          "checkable":false,
+                          "children": []
+                        },
+                        {
+                          "id": "0103070107",
+                          "title": "越洋国际商务中心",
+                          "key": "0-0-2-6-6-1-7",
+                          "scopedSlots": {"title": "custom1"},
+                          "des":"ance",
+                          "checkable":false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0103060702",
+                      "title": "苏宁睿城",
+                      "key": "0-0-2-6-6-2",
+                      "scopedSlots": {"title": "custom1"},
+                      "des":"ance",
+                      "checkable":false,
+                      "children": []
+                    },
+                    {
+                      "id": "0103060703",
+                      "title": "佳和园",
+                      "key": "0-0-2-6-6-3",
+                      "scopedSlots": {"title": "custom1"},
+                      "des":"ance",
+                      "checkable":false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "010307",
+              "title": "汉中门派出所",
+              "key": "0-0-2-7",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010308",
+              "title": "小市派出所",
+              "key": "0-0-2-8",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010309",
+              "title": "四所村派出所",
+              "key": "0-0-2-9",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010310",
+              "title": "宝塔桥派出所",
+              "key": "0-0-2-10",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010311",
+              "title": "阅江楼派出所",
+              "key": "0-0-2-11",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010312",
+              "title": "二板桥派出所",
+              "key": "0-0-2-12",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010313",
+              "title": "幕府山派出所",
+              "key": "0-0-2-13",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "0104",
+          "title": "建邺分局",
+          "key": "0-0-3",
+          "scopedSlots": {"title": "custom1"},
+          "des":"ance",
+          "checkable":false,
+          "children": [
+            {
+              "id": "010401",
+              "title": "莫愁湖派出所",
+              "key": "0-0-3-1",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010402",
+              "title": "南苑派出所",
+              "key": "0-0-3-2",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010403",
+              "title": "滨江派出所",
+              "key": "0-0-3-3",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            },
+            {
+              "id": "010404",
+              "title": "莲花派出所",
+              "key": "0-0-3-4",
+              "scopedSlots": {"title": "custom1"},
+              "des":"ance",
+              "checkable":false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "0105",
+          "title": "浦口分局",
+          "key": "0-0-4",
+          "scopedSlots": {"title": "custom1"},
+          "des":"father-PK",
+          "checkable":false,
+          "children":[
+            {
+              "id": "010501",
+              "title": "江浦南门搬迁三期LF-2",
+              "key": "0-0-4-1",
+              "scopedSlots": {"title": "custom2"},
+              "checkable":true,
+              "des":"child",
+              "cameraID":"camera1-JP",
+              "deviceId": "32000000000105010103000000004281",
+              "type": "flv"
+            },
+            {
+              "id": "010502",
+              "title": "江浦南门搬迁一期",
+              "key": "0-0-4-2",
+              "scopedSlots": {"title": "custom2"},
+              "checkable":true,
+              "des":"child",
+              "cameraID":"camera2-JP",
+              "type": "flv",
+              "deviceId": "32000000000105010103000000004287"
+            },
+            {
+              "id": "010503",
+              "title": "浦口区第四中学",
+              "key": "0-0-4-3",
+              "scopedSlots": {"title": "custom2"},
+              "checkable":true,
+              "des":"child",
+              "cameraID":"camera3-JP"
+            }
+          ]
+        },
+        {
+          "id": "0106",
+          "title": "栖霞分局",
+          "key": "0-0-5",
+          "scopedSlots": {"title": "custom1"},
+          "des":"ance",
+          "checkable":false,
+          "children": []
+        },
+        {
+          "id": "0107",
+          "title": "江宁分局",
+          "key": "0-0-6",
+          "scopedSlots":{"title": "custom1"},
+          "des":"father-JN",
+          "children":[
+            {
+              "id":"010701",
+              "title":"01-金鹰与景枫交界路口",
+              "key":"0-0-6-1",
+              "scopedSlots":{"title": "custom2"},
+              "des":"child",
+              "cameraID":"camera1-JN"
+            },
+            {
+              "id":"010702",
+              "title":"02-景枫南广场",
+              "key":"0-0-6-2",
+              "scopedSlots":{"title": "custom2"},
+              "des":"child",
+              "cameraID":"camera2-JN"
+            },
+            {
+              "id":"010703",
+              "title":"03-景枫西侧小广场",
+              "key":"0-0-6-3",
+              "scopedSlots":{"title": "custom2"},
+              "des":"child",
+              "cameraID":"camera3-JN"
+            },
+            {
+              "id":"010704",
+              "title":"04-双龙大道景枫路口",
+              "key":"0-0-6-4",
+              "scopedSlots":{"title": "custom2"},
+              "des":"child",
+              "cameraID":"camera4-JN"
+            },
+            {
+              "id":"010705",
+              "title":"05-太阳城高空",
+              "key":"0-0-6-5",
+              "scopedSlots":{"title": "custom2"},
+              "des":"child",
+              "cameraID":"camera5-JN"
+            }
+          ]
+        },
+        {
+          "id": "0108",
+          "title": "雨花台分局",
+          "key": "0-0-7",
+          "scopedSlots": {"title": "custom1"},
+          "des":"ance",
+          "checkable":false,
+          "children": []
+        },
+        {
+          "id": "0109",
+          "title": "六合分局",
+          "key": "0-0-8",
+          "scopedSlots": {"title": "custom1"},
+          "des":"ance",
+          "checkable":false,
+          "children": []
+        },
+        {
+          "id": "0110",
+          "title": "溧水分局",
+          "key": "0-0-9",
+          "scopedSlots": {"title": "custom1"},
+          "des":"ance",
+          "checkable":false,
+          "children": []
+        },
+        {
+          "id": "0111",
+          "title": "高淳分局",
+          "key": "0-0-10",
+          "scopedSlots": {"title": "custom1"},
+          "des":"ance",
+          "checkable":false,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

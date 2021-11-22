@@ -1,0 +1,148 @@
+{
+  "cameraConfig": [
+    {
+      "cameraID": "camera3",
+      "title": "智慧地理研究室办公区",
+      "parTitle": "联创大厦",
+      "url": "http://192.168.50.126:8012/v1.0/location",
+      "videoUrl": "rtsp://admin:Gtis@123@192.168.60.67:554/h264/ch1/main/av_stream",
+      "ptz": {
+        "longitude": 118.71583253,
+        "latitude": 32.036443298,
+        "altitude": 49.93,
+        "direction": 296.547,
+        "pitch": -15.806,
+        "horizontalFov": 54,
+        "verticalFov": 37
+      }
+    },
+    {
+      "cameraID": "camera1-JN",
+      "title": "金鹰与景枫交界路口",
+      "parTitle": "江宁分局",
+      "url": "http://192.168.50.43:8012/v1.0/location",
+      "videoUrl": "http://192.168.50.126:8080/video/09JnTest.mp4",
+      "ptz": {
+        "longitude": 118.814149,
+        "latitude": 31.933065,
+        "altitude": 15.262,
+        "direction": 92.8,
+        "pitch": -3.384355,
+        "horizontalFov": 20.1,
+        "verticalFov": 10
+      }
+    },
+    {
+      "cameraID": "camera2-JN",
+      "title": "景枫南广场",
+      "parTitle": "江宁分局",
+      "url": "http://192.168.50.43:8012/v1.0/location",
+      "videoUrl": "http://192.168.50.126:8080/video/10JnTest.mp4",
+      "ptz": {
+        "longitude": 118.815264976892,
+        "latitude": 31.9306218469678,
+        "altitude": 12.1014447840303,
+        "direction": 78,
+        "pitch": -15.778038,
+        "horizontalFov": 53,
+        "verticalFov": 27
+      }
+    },
+    {
+      "cameraID": "camera3-JN",
+      "title": "景枫西侧小广场",
+      "parTitle": "江宁分局",
+      "url": "http://192.168.50.43:8012/v1.0/location",
+      "videoUrl": "http://192.168.50.126:8080/video/11JnTest.mp4",
+      "ptz": {
+        "longitude": 118.813924900005,
+        "latitude": 31.9312602999974,
+        "altitude": 10.47,
+        "direction": 92.780621,
+        "pitch": -13.670227,
+        "horizontalFov": 49,
+        "verticalFov": 22
+      }
+    },
+    {
+      "cameraID": "camera4-JN",
+      "title": "双龙大道景枫路口",
+      "parTitle": "江宁分局",
+      "url": "http://192.168.50.43:8012/v1.0/location",
+      "videoUrl": "http://192.168.50.126:8080/video/12JnTest.mp4",
+      "ptz": {
+        "longitude": 118.81554772035,
+        "latitude": 31.932958146618,
+        "altitude": 12.7187237991765,
+        "direction": 92.780621,
+        "pitch": -13.670227,
+        "horizontalFov": 64,
+        "verticalFov": 28
+      }
+    },
+    {
+      "cameraID": "camera5-JN",
+      "title": "太阳城高空",
+      "parTitle": "江宁分局",
+      "url": "http://192.168.50.43:8012/v1.0/location",
+      "videoUrl": "http://192.168.50.126:8080/video/13JnTest.mp4",
+      "ptz": {
+        "longitude": 118.817761,
+        "latitude": 31.929664,
+        "altitude": 108.125,
+        "direction": 291,
+        "pitch": -34.8,
+        "horizontalFov": 37,
+        "verticalFov": 17
+      }
+    },
+    {
+      "cameraID": "camera1-JP",
+      "title": "江浦南门三期",
+      "parTitle": "江浦南门",
+      "url": "http://192.168.50.104:8012/v1.0/location",
+      "videoUrl": "http://183.207.103.98:8000/flv/MT_20200903090106882ya14d2r7l4K8?encrypt=orD2igsZBGu5046R&timestamp=1607906903376",
+      "ptz": {
+        "longitude": 118.64776309,
+        "latitude": 32.05380093,
+        "altitude": 44.215,
+        "direction": 246.585072,
+        "pitch": -10.782923,
+        "horizontalFov": 52,
+        "verticalFov": 31
+      }
+    },
+    {
+      "cameraID": "camera2-JP",
+      "title": "江浦南门一期",
+      "parTitle": "江浦南门",
+      "url": "http://192.168.50.104:8012/v1.0/location",
+      "videoUrl": "http://183.207.103.98:8000/flv/MT_20200902171646233hmocJLFCk2Cl?encrypt=uDaURI2JOTMkd9i5&timestamp=1607678389599",
+      "ptz": {
+        "longitude": 118.65664199,
+        "latitude": 32.07512430,
+        "altitude": 27.025,
+        "direction": 203.498013,
+        "pitch": -13.223301,
+        "horizontalFov": 64,
+        "verticalFov": 19
+      }
+    },
+    {
+      "cameraID": "camera3-JP",
+      "title": "浦口区第四中学",
+      "parTitle": "江浦南门",
+      "url": "http://192.168.50.104:8012/v1.0/location",
+      "videoUrl": "http://192.168.2.155:8080/video/02JpTest.mp4",
+      "ptz": {
+        "longitude": 118.64003661111111,
+        "latitude": 32.067305861111116,
+        "altitude": 44.739,
+        "direction": 34.045785,
+        "pitch": -53.087021,
+        "horizontalFov": 72,
+        "verticalFov": 44
+      }
+    }
+  ]
+}
